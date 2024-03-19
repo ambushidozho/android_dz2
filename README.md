@@ -9,7 +9,9 @@
 Таким образом мы можем прокинуть вредоносный тег script на страницу и исполнить js. С помощью интерфейса получить токен юзера и отправить в любое место.
 ![image](https://github.com/ambushidozho/android_dz2/assets/102957421/9d006439-8a99-4334-a8e4-526a392207eb)
 Чтобы все таки уязвимость сработала, нашу вредоносную строку нужно превратить в qr код и в случае скана пользователем наш payload пройдет все проверки и украдет токен
+
 Пример PoC: {'promo':'<script>alert(Android.getToken());</script>','sign':'c4ad0112a4b7aad58385349d66426fb6'}
+
 Base32 : PMTXA4TPNVXSOORHHRZWG4TJOB2D4YLMMVZHIKCBNZSHE33JMQXGOZLUKRXWWZLOFAUSSOZ4F5ZWG4TJOB2D4JZME5ZWSZ3OE45COYZUMFSDAMJRGJQTIYRXMFQWINJYGM4DKMZUHFSDMNRUGI3GMYRWE56Q====
 
 
